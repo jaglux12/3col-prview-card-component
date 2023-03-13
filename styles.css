@@ -1,0 +1,113 @@
+/* Reseteo de estilos */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables */
+
+:root{
+
+    /* Colores primarios */
+    --Bright-orange: hsl(31,77%,52%);
+    --Dark-cyan: hsl(184,100%,22%);
+    --Very-dark-cyan: hsl(179,100%,13%);
+
+    /* Colores del texto */
+    --transparent-white:hsla(0, 0%,100%,0.75);
+    --very-light-gray: hsl(0,0%,95%);
+
+}
+
+html{
+    font-size: 15px;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+main{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 3.2rem;
+    width: 327px;
+    height: 442px;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 2.5rem;
+}
+
+p{
+    color: var(--transparent-white);
+}
+
+p, button{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+button{
+    border: none;
+    border-radius: 24px;
+    height: 48px;
+    width: 146px;
+}
+
+h1, button{
+    color: var(--very-light-gray);
+}
+
+/* Color de las cards */
+
+.sedan{
+    background-color: var(--Bright-orange);
+}
+
+.suv{
+    background-color: var(--Dark-cyan);
+}
+
+.lux{
+    background-color: var(--Very-dark-cyan);
+}
+
+
+/* Color de los botones */
+
+.bsedan{
+    color: var(--Bright-orange);
+}
+
+.bsuv{
+    color: var(--Dark-cyan);
+}
+
+.blux{
+    color: var(--Very-dark-cyan);
+}
+
+/* Media queries */
+
+@media (min-width: 991px) {
+    main{
+        flex-direction: row;
+    }
+}
+
