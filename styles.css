@@ -1,9 +1,9 @@
 /* Reseteo de estilos */
 
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 /* Variables */
@@ -26,10 +26,10 @@ html{
 }
 
 body{
-    display: flex;
     align-items: center;
-    justify-content: center;
+    display: flex;
     height: 100%;
+    justify-content: center;
     width: 100%;
 }
 
@@ -42,10 +42,10 @@ main{
 article{
     display: flex;
     flex-direction: column;
+    height: 442px;
     justify-content: space-evenly;
     padding: 3.2rem;
     width: 327px;
-    height: 442px;
 }
 
 h1 {
@@ -110,4 +110,3 @@ h1, button{
         flex-direction: row;
     }
 }
-
